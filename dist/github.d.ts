@@ -30,6 +30,7 @@ export type WorkflowArtifact = {
     name: string;
 };
 export declare function artifactNameForStage(stageId: string): string;
+export declare function extractFileFromZipBuffer(zipBytes: Buffer, targetFile: string): string | null;
 export declare class GitHubActionsClient {
     private readonly token;
     private readonly owner;
